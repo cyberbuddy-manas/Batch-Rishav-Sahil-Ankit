@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js Code</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<input type="text" id="num1">
+	<input type="text" id="num2">
+	<button id="btn" onclick="everything()">*</button>
+	<br>
+
+	<!-- <script type="text/javascript">
+		function everything() {
+			document.getElementById('ans').innerHTML = parseInt(document.getElementById('num1').value) + parseInt(document.getElementById('num2').value);
+		}
+	</script> -->
+
+	<script type="text/javascript">
+		function addition() {
+			var target1 = document.getElementById('num1').value;
+			var target2 = 2;
+
+			return parseInt(target1) * parseInt(target2);
+		}
+
+		var target3 = document.getElementById('num2');
+		var btn = document.getElementById('btn');
+
+		function answer() {
+			target3.value = addition();
+		}
+
+		btn.onclick = answer;
+	</script>
+</body>
+</html>

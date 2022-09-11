@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Using Invalid Selector</title>
+	<style type="text/css">
+		.pass:focus {
+			outline: none;
+		}
+
+		.test {
+			border: 2px solid red;
+			animation: 0.3s wobble;
+			border-radius: 2px;
+		}
+
+		@keyframes wobble {
+			25% {
+				transform: translateX(-7px);
+			}
+			50% {
+				transform: translateX(7px);
+			}
+			75% {
+				transform: translateX(-7px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<form action="/action_page.php">
+	  <label for="pwd">Password:</label>
+	  <input type="password" id="pwd" class="pass" name="pwd" title="Eight or more characters" required>
+	  <input type="submit" id="submit" onclick="validate()">
+	</form>
+
+	<script type="text/javascript">
+		function animate() {
+			const input = document.getElementById('pwd');
+			input.classList.add('test');
+		}
+
+		function validate() {
+			document.getElementById('submit').addEventListener('submit', (ele)=> {
+				ele.preventDefault();
+			});
+			const input = document.getElementById('pwd');
+			if (input.value.length <= 8) {
+				animate();
+				setTimeout(() => {input.classList.remove('test');}, 1000)
+			}
+			if (input.value.length > 8) {
+				document.getElementById('submit').addEventListener('submit', (ele)=> {
+					return true;
+				});
+			}
+		}
+	</script>
+</body>
+</html>

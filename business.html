@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Business</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			/*box-sizing: border-box;*/
+			font-family: 'Montserrat';
+		}
+
+		nav {
+			height: 80px;
+			display: flex;
+			align-items: center;
+		}
+
+		nav .menu {
+			width: 30px;
+			height: 25px;
+			display: grid;
+		}
+
+		nav .menu div {
+			width: 100%;
+			height: 3px;
+			background-color: black;
+		}
+
+		header {
+			width: 100%;
+			height: calc(100vh - 80px);
+			background-image: url('https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/f00c68b1473c5eba9576bc03/corporate-business-handshake-partners.jpg');
+			background-size: cover;
+			background-position: center;
+			color: white;
+			padding-top: 170px;
+			text-align: center;
+		}
+
+		/*header::before {
+			content: '';
+			width: 100%;
+			height: calc(100vh - 80px);
+			background-color: rgba(0, 0, 0, 0.15);
+
+			position: absolute;
+			z-index: 0;
+			left: 0;
+			top: 0;
+			margin-top: 80px;
+		}
+
+		header > * {
+			z-index: 10;
+		}*/
+
+		header h2 {
+			font-size: 4rem;
+			font-weight: 700;
+		}
+
+		header h1 {
+			font-size: 6rem;
+			font-weight: 700;
+		}
+
+		@media screen and (max-width: 950px) {
+			header h2 {
+				font-size: 6.5vw;
+			}
+
+			header h1 {
+				font-size: 10vw;
+			}
+		}
+
+		@media screen and (max-width: 700px) {
+			header h2 {
+				font-size: 2.5rem;
+			}
+
+			header h1 {
+				font-size: 4.7rem;
+			}
+		}
+
+		main.about {
+			width: 100%;
+			height: 90vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		main.about section:nth-child(1) {
+			width: 50%;
+		}
+
+		main.about div.img-con {
+			width: 80%;
+			height: 540px;
+			background-image: url('https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/572af275b87a559d93b354c8/travel-agent-hearing-customer-desires-portrait-good-looking-european-businesswoman-blue-blouse-glasses-holding-hands-pockets-smiling-being-friendl.jpg');
+			background-size: cover;
+			background-position: right;
+		}
+
+		main.about section:nth-child(2) {
+			text-align: center;
+		}
+
+		main.about h4 {
+			font-weight: 400;
+			font-size: 23px;
+		}
+
+		main.about h1 {
+			font-weight: 700;
+			font-size: 38px;
+		}
+
+		main.about p {
+			font-family: 'Open Sans';
+		}
+
+		main.about section p:nth-child(3) {
+			color: rgba(0, 0, 0, 0.6);
+		}
+
+		main.about h2 {
+			color: #4767c9;
+			font-size: 68px;
+			font-weight: 700;
+			margin-top: 30px;
+		}
+
+		main.about a {
+			text-decoration: none;
+		}
+
+		main.feature {
+			width: 100%;
+			height: 90vh;
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<section class="container">
+			<div class="menu">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</section>
+	</nav>
+	<header>
+		<h2>we construct</h2>
+		<h1>YOUR SUCCESS</h1>
+	</header>
+	<main class="about">
+		<section>
+			<div class="img-con"></div>
+		</section>
+		<section>
+			<h4>about us</h4>
+			<h1>Achieving our goals</h1>
+			<p>Sample text. Click to select the Text Element.</p>
+			<h2>$ 250 000</h2>
+			<p>Sample text. Click to select the Text Element.</p>
+			<h2>$ 13 000</h2>
+			<p>Sample text. Click to select the Text Element.</p>
+			<p>Image from <a href="https://www.freepik.com">Freepik</a></p>
+		</section>
+	</main>
+	<main class="feature">
+		
+	</main>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyTech.in | Your Technical Blogs</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+		}
+
+		header .branding {
+			background-color: #EBE8FF;
+			height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-weight: 600;
+		}
+
+		header .branding h1 {
+			color: rgba(0, 0, 0, 0.8);
+			font-size: 36px;
+		}
+
+		header .branding span {
+			font-weight: 500;
+			font-size: 30px;
+		}
+
+		nav {
+			background-color: black;
+			height: 50px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav ul.menu {
+			color: white;
+			list-style-type: none;
+			display: flex;
+			column-gap: 30px;
+		}
+
+		nav ul.menu a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		nav ul.menu a:hover {
+			text-decoration: underline;
+		}
+
+		ul.dropdown-menu {
+			display: none;
+		}
+
+		@media screen and (max-width: 850px) {
+			nav {
+				height: auto;
+				flex-direction: column;
+			}
+
+			nav div#btn {
+				width: 40px;
+				height: 30px;
+				display: grid;
+				margin: 20px 0;
+				cursor: pointer;
+			}
+
+			nav .line {
+				width: 100%;
+				height: 4px;
+				background-color: white;
+			}
+
+			nav ul.menu {
+				display: none;
+			}
+			
+			ul.dropdown-menu {
+				width: 100%;
+				text-align: center;
+				list-style-type: none;
+			}
+
+			ul.dropdown-menu a {
+				color: white;
+				text-decoration: none;
+			}
+
+			ul.dropdown-menu li {
+				padding: 10px 0;
+			}
+
+			ul.dropdown-menu li:hover {
+				background-color: white;
+				color: black;
+			}
+		}
+
+		main {
+			width: 100%;
+			height: calc(100vh - 140px);
+			display: flex;
+			align-items: center;
+		}
+
+		main .container {
+			width: 100%;
+			height: 450px;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			gap: 30px;
+			flex-wrap: wrap;
+		}
+
+		main .container .card {
+			height: 400px;
+			width: 400px;
+			background-color: black;
+			border-radius: 25px;
+			background-size: cover;
+			background-position: center;
+		}
+
+		/* main .container .c1 {
+			background-image: url('https://wallpaper.dog/large/647612.jpg');
+		}
+
+		main .container .c2 {
+			background-image: url('https://free4kwallpapers.com/uploads/originals/2016/02/15/technology-wallpaper.jpg');
+		}
+
+		main .container .c3 {
+			background-image: url('https://wallpaper.dog/large/988057.jpg');
+		} */
+	</style>
+</head>
+<body>
+	<header>
+		<div class="branding">
+			<h1>MyTech<span>.in</span></h1>
+		</div>
+		<nav>
+			<ul class="menu">
+				<a href=""><li>HOME</li></a>
+				<a href=""><li>ABOUT</li></a>
+				<a href=""><li>CONTACT</li></a>
+				<a href=""><li>TECHNOLOGY</li></a>
+				<a href=""><li>FOOD</li></a>
+				<a href=""><li>GADGETS</li></a>
+				<a href=""><li>SCIENCE</li></a>
+				<a href=""><li>FAQ</li></a>
+			</ul>
+
+			<div id="btn" onclick="menu()">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+
+			<ul class="dropdown-menu">
+				<a href=""><li>HOME</li></a>
+				<a href=""><li>ABOUT</li></a>
+				<a href=""><li>CONTACT</li></a>
+				<a href=""><li>TECHNOLOGY</li></a>
+				<a href=""><li>FOOD</li></a>
+				<a href=""><li>GADGETS</li></a>
+				<a href=""><li>SCIENCE</li></a>
+				<a href=""><li>FAQ</li></a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="container">
+			<div class="card c1"></div>
+			<div class="card c2"></div>
+			<div class="card c3"></div>
+		</section>
+	</main>
+
+	<script>
+		var semaphore = 0;
+		function menu() {
+			var menu = document.getElementsByClassName('dropdown-menu')[0];
+			if (semaphore == 0) {
+				menu.style.display = 'unset';
+				semaphore = 1;
+			} else if (semaphore == 1) {
+				menu.style.display = 'none';
+				semaphore = 0;
+			}
+		}
+	</script>
+</body>
+</html>
