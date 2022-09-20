@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Countdown</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="root">10</div>
+    <div id="root1">20</div>
+    <div id="root2">50</div>
+    <div id="root3">100</div>
+    <script>
+       function root1(root) {
+        var num = document.getElementById(root);
+
+        // for (let i = 0; i < num1; i++) {
+        //     num.innerHTML = num.innerHTML - 1;
+        // }
+
+        function countdown() {
+            num.innerHTML = num.innerHTML - 1;
+        }
+
+        var inter = setInterval(countdown, 1000);
+
+        function rm() {
+            if (num.innerHTML == 0) {
+                clearInterval(inter);
+            }
+        }
+
+        var time = parseInt(num.innerHTML + "000");
+        setTimeout(rm, time)
+       }
+
+       root1('root');
+       root1('root2');
+    </script>
+</body>
+</html>
