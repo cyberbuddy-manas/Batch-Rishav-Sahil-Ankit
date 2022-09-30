@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PasteIt | Better alternate to Pastebin</title>
+
+    <!--==== Meta Tags ====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content=""/>
+    <meta property="og:title" content="PasteIt | Better alternate to Pastebin"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--==== Google Fonts ====-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--==== Main Style Sheet =====-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="branding">PasteIt.com</h1>
+    </header>
+    <main>
+        <section>
+            <label for="title"><h1>Title</h1></label>
+            <input type="text" id="title" placeholder="Untitled Document">
+        </section>
+        <textarea spellcheck="false" id="paste" cols="30" rows="12" placeholder="Paste Here"></textarea>
+        <button id="submit">Paste</button>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

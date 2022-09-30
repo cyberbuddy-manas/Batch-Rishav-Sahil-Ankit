@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #FCA311;
+    text-align: center;
+    font-size: 19px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+}
+
+main section {
+    display: flex;
+}
+
+main h1 {
+    padding: 10px 50px;
+    background-color: #E5E5E5;
+    font-size: 25px;
+    text-align: center;
+}
+
+main section input#title {
+    padding: 0 20px;
+    width: 100%;
+    font-size: 22px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+main textarea {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+main button {
+    margin: auto;
+    width: 18%;
+    padding: 10px 0;
+    font-weight: 700;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 3px solid #14213D;
+    cursor: pointer;
+}
