@@ -31,8 +31,35 @@
             <input type="text" id="title" placeholder="Untitled Document">
         </section>
         <textarea spellcheck="false" id="paste" cols="30" rows="12" placeholder="Paste Here"></textarea>
-        <button id="submit">Paste</button>
+        <button id="submit" onclick="sendData()">Paste</button>
     </main>
+
+    <main>
+        <h1 id="head"></h1>
+        <p id="desc"></p>
+    </main>
+
+    <!--==== Firebase ====-->
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+	<script>
+	  const firebaseConfig = {
+        apiKey: "AIzaSyAPpBqRt4kqN0fmxmgroQMEcC-rZFlYOvc",
+        authDomain: "pasteit-84a72.firebaseapp.com",
+        projectId: "pasteit-84a72",
+        storageBucket: "pasteit-84a72.appspot.com",
+        messagingSenderId: "292779684003",
+        appId: "1:292779684003:web:69cdaf01a97dee317a8f16",
+        measurementId: "G-REZDK4GE1C"
+      };
+	  // Initialize Firebase
+	  firebase.initializeApp(firebaseConfig);
+	  firebase.analytics();
+	</script>
+
+    <!--==== Main JS ====-->
     <script src="./app.js"></script>
 </body>
 </html>
