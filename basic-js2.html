@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Print Page</title>
+</head>
+<body>
+	<h2>The window.print() Method</h2>
+
+	<p>Click the button to print the current page.</p>
+
+	<button id="btn">Print this page</button>
+
+	<script type="text/javascript">
+		function print1() {
+			print();
+		}
+
+		document.getElementById('btn').onclick = print1;
+	</script>
+</body>
+</html>

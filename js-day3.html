@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body id="root">
+	<script type="text/javascript">
+		obj = [{
+			name: "Manas",
+			age: "22",
+			gender: "Male"
+		},
+		{
+			name: "Sahil",
+			age: "20",
+			gender: "Male"
+		},
+		{
+			name: "Arshpreet",
+			age: "18",
+			gender: "Female"
+		},
+		{
+			name: "Ankit",
+			age: "20",
+			gender: "Male"
+		}];
+
+		for (var i = 0; i < obj.length; i++) {
+			let para = document.createElement("p");
+
+			para.innerHTML = "Name: " + obj[i].name + "<br>" + "Age: " + obj[i].age + "<br>" + "Gender: " + obj[i].gender;
+
+			let root = document.getElementById('root');
+
+			root.append(para);
+		}
+
+		// for (var i = 0; i < obj.length; i++) {
+		// 	arr.push("Name: " + obj[i].name + "<br>" + "Age: " + obj[i].age + "<br>" + "Gender: " + obj[i].gender + "<br>" + "<br>");
+		// }
+
+		// document.getElementById('root').innerHTML = arr;
+	</script>
+</body>
+</html>
